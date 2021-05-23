@@ -1,5 +1,5 @@
-import { Component } from "react"
-import React { Component } from './UglyFlowersContext.js'
+import React,{ Component } from "react"
+import { Component } from './UglyFlowersContext.js'
 
 class UglyFlowerForm extends Component {
     state = {
@@ -18,7 +18,7 @@ class UglyFlowerForm extends Component {
         })
     }
 
-    uglyFlowersUpdate = (e, this.context) => {
+    uglyFlowersUpdate = (e, context) => {
         e.preventDefault()
         this.setState({
             listUpdate: [
@@ -98,9 +98,24 @@ class UglyFlowerForm extends Component {
                             />
                         </div>
 
-                        <div style =
+                        <div style = {{gridColumn: "span'2"}}></div>
+                        <div classname = "td">
+                            <input
+                            className = "submit"
+                            type= "submit"
+                            onclick = {(e) => {
+                                this.uglyFlowersUpdate(e, context)
+                            }}
+                            value= "Submit"
+                        />
+                    </div>
+                </div>
+                <br /><br />
+            </form>
+            )}
+        </ContextConsumer>
+        )
+    }
+}
 
-                </form>
-            </ContextConsumer>
-
-    
+export default Form
