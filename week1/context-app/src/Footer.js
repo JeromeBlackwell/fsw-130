@@ -1,17 +1,16 @@
+import React from 'react'
 import { SupplyContextConsumer } from './SupplyContext.js'
 
-function Navbar() {
+function Footer() {
     return (
         <SupplyContextConsumer>
-        { context => (
-                <nav className={`${context.supply}-supply`}>
-                    <ul className='nav-links'>
-                        <li>About</li>
-                        <li>Order</li>
-                        <li>Parts</li>
-                        <li>Contact</li>
-                    </ul>
-                </nav>
+            { context => (
+                <div className={`${context.supply}-footer-supply`}>
+                    <p className ={`${context.supply}-p-supply`}>&copy; Blackwell Medical Supplies 2021</p>
+                </div>
         )}
-    </SupplyContextConsumer>
-)}
+        </SupplyContextConsumer>
+    )
+}
+
+export default Footer

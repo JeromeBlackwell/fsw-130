@@ -9,14 +9,14 @@ class SupplyContextProvider extends React.Component {
 switchSupply = () => {
     this.setState((prevState) => {
         return {
-            supply: prevState.Supply === 'light' ? 'dark' : 'light',
+            supply: prevState.supply === 'light' ? 'dark' : 'light',
         }
     })
 }
 
 render() {
     return (
-        <Provider value ={{Supply: this.state.Supply, switchSupply: this.switchsupply}}>
+        <Provider value ={{supply: this.state.supply, switchSupply: this.switchSupply}}>
             {this.props.children}
         </Provider>
         )

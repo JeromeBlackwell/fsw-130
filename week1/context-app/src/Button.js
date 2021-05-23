@@ -5,7 +5,7 @@ const Mask = () => {
     return (
         <SupplyContextConsumer>
             {(context) => (
-                <button onClick={context.switchSupply} className={`${context.Supply}=supply`}>Switch Supply</button>
+                <button onClick={context.switchSupply} className={`${context.supply}-supply`}>Switch Supply</button>
             )}
         </SupplyContextConsumer>
     )
