@@ -2,7 +2,8 @@ import React from 'react'
 import { SupplyContextConsumer } from './SupplyContext.js'
 
 function Navbar() {
-    return (
+    return ( 
+    <div>
         <SupplyContextConsumer>
         { context => (
                 <nav className={`${context.supply}-supply`}>
@@ -15,6 +16,7 @@ function Navbar() {
                 </nav>
         )}
     </SupplyContextConsumer>
+    </div>
     )
 }
 
