@@ -1,7 +1,6 @@
 import React from 'react'
 import { SupplyContextConsumer } from './SupplyContext.js'
 
-
 function Navbar() {
     return (
         <SupplyContextConsumer>
@@ -16,4 +15,7 @@ function Navbar() {
                 </nav>
         )}
     </SupplyContextConsumer>
-)}
+    )
+}
+
+export default Navbar
