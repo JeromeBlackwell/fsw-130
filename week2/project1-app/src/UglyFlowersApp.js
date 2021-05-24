@@ -1,6 +1,6 @@
 import React from 'react'
-import Form from './UglyFlowerForms.js'
-import Things from './Uglyflowers.js'
+import Form from './UglyFlowersForms.js'
+import Flower from './Uglyflowers.js'
 import { ContextProvider } from './UglyFlowersContext.js'
 import './UglyFlowersApp.css';
 

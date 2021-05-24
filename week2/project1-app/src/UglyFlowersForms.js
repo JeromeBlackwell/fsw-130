@@ -1,7 +1,7 @@
 import React,{ Component } from "react"
-import { Component } from './UglyFlowersContext.js'
+import { ContextConsumer } from './UglyFlowersContext.js'
 
-class UglyFlowerForm extends Component {
+class Form extends Component {
     state = {
         listUpdate: [],
         uglyFlowersTitle: '',

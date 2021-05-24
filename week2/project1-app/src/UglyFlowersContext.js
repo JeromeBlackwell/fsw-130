@@ -6,21 +6,21 @@ class ContextProvider extends Component {
         uglyFlowersLists: [
             {
             uglyFlowersTitle: "Amorphophallus Paeonifolius",
-            uglyFlowersDescription: "",
+            uglyFlowersDescription: "Amorphophallus Paeonifolius is a perrinial and grows to about 2ft 7inches.",
             uglyFlowersImage: "./Amorphophallus.jpg",
-            comments: ["This flower is very ugly."],
+            comments: ["This flower looks prehistoric and ugly too."],
             },
             {
                 uglyFlowersTitle: "Gastrodia Annicellus",
-                uglyFlowersDescription: "",
+                uglyFlowersDescription: "2021's newly found species and was given the name, the Ugliest Orchid in the World",
                 uglyFlowersImage: "./Gastrodia.jpg",
                 comments: ["This flower is insane."],
             }, 
             {
-                uglyFlowersTitle: "Pin on Jardines",
+                uglyFlowersTitle: "Aristolochia Salvadorensis",
                 uglyFlowersDescription: "",
-                uglyFlowersImage: "./PinonJardines.jpg",
-                comments: ["come on, why does this flower look like a ghost?"],
+                uglyFlowersImage: "./Aristolochia.jpg",
+                comments: ["The Darth Vader flower is pure ugly and creepy too."],
             },
         ],
     }
