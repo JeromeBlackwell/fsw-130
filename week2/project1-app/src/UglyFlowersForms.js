@@ -53,7 +53,7 @@ class Form extends Component {
             comment: '',
         })
         var flower = context.uglyFlowersLists
-        object.assign(flower[indext], {
+        Object.assign(flower[index], {
             comments: [...context.uglyFlowersLists[index].comments, e.target.value],
         })
         context.updateFlowersItems(flower)

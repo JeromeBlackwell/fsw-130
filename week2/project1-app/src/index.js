@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import UglyFlowersApp from './UglyFlowersApp';
 import reportWebVitals from './reportWebVitals';
+import {ContextProvider} from './UglyFlowersContext'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <ContextProvider>
     <UglyFlowersApp />
-  </React.StrictMode>,
+  </ContextProvider>,
   document.getElementById('root')
 );
 
