@@ -1,7 +1,7 @@
-import React from "react"
+import React, { Component } from "react"
 import {ContextConsumer} from "./UglyFlowersContext.js"
 
-class Things extends Component {
+class Flowers extends Component {
     handleChange = (e) => {
         const { name, value } = e.target
         this.setState({
@@ -9,13 +9,13 @@ class Things extends Component {
         })
     }
     
-    uglyUpdate = (e, context) => {
+    uglyFlowersUpdate = (e, context) => {
         context.updateItems([
-        ...context.uglyLists,
+        ...context.uglyFlowersLists,
         {
-        uglyTitle: this.state.uglyTitle,
-        uglydescription: this.state.uglydescription,
-        uglyImage: this.state.uglyImage,
+        uglyTitle: this.state.uglyFlowersTitle,
+        uglydescription: this.state.uglyFlowersDescription,
+        uglyImage: this.state.uglyFlowersImage,
         comments: this.state.comments,
         },
     ])
@@ -23,12 +23,12 @@ class Things extends Component {
     
 newComments = (e, context, index) => {
     this.setState({
-        comments: [...context.uglyLists[index].comments, e.target.value],
+        comments: [...context.uglyFlowersLists[index].comments, e.target.value],
         comment: '',
         })
-        var array = context.uglyLists
+        var array = context.uglyFlowersLists
         Object.assign(array[index], {
-            comments: [...context.uglyLists[index].comments, e.target.value],
+            comments: [...context.uglyFlowersLists[index].comments, e.target.value],
             })
             context.updateItems(array)
         }
@@ -36,23 +36,46 @@ newComments = (e, context, index) => {
             return (
                 <ContextConsumer>
                     {(context) => (
-                <div className="things-wrapper">
-                    {context.uglyLists.map((uglyInfo, index) => (
-                <div id={index} key={index}>
-            <div className='th'>
-            {uglyInfo.uglyTitle}
-            <button style={{ float:"right", padding:"2px", borderRadius:"3px", backgroundC
-            </div>
-            <div className='td'><img src={uglyInfo.uglyImage} style={{ width:"90%", height:"
-            <div className='td'>{uglyInfo.uglydescription}</div>
-            <br />
-            <div className='td'>
-            <input
-            name='comment'
-            type='text'
-            onChange={this.handleChange}
-            onKeyPress={(e) => {
-            if (e.key === 'Enter') {
-            this.newComments(e, context, index)
-            }
-           cancelAnimationFrame
+                        <div className="things-wrapper">
+                            {context.uglyFlowersLists.map((uglyInfo, index) => (
+                                <div id={index} key={index}>
+                                    <div className='th'>
+                                        {uglyInfo.uglyFlowersTitle}
+                                        <button style={{ float:"right", padding:"2px", borderRadius:"3px", backgroundColor:"green"}} onClick={context.uglyDelete} id={index}>Delete</button>
+                                    </div>
+                                        <div className='td'><img src={uglyInfo.uglyFlowersImage} style={{ width:"90%", height:"90%", padding: "10px"}} alt='' /></div>
+                                        <div className='td'>{uglyInfo.uglyFlowersDescription}</div>
+                                        <br />
+                                        <div className='td'>
+                                            <input
+                                                name='comment'
+                                                type='text'
+                                                onChange={this.handleChange}
+                                                onKeyPress={(e) => {
+                                                if (e.key === 'Enter') {
+                                                this.newComments(e, context, index)
+                                            }
+                                        }}
+                                        placeholder='Add Your Own Comment'
+                                    />
+                                    {uglyInfo.comments.map((comment, i) => (
+                                        <div className='td'>
+                                            {comment}{' '}
+                                            <button
+                                                style={{ padding:"3px", borderRadius:"3px", backgroundColor:"green"}}
+                                                onClick={(e) => context.uglyCommentDelete(e, index)}
+                                                id={i}
+                                            >X</button>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                )}
+            </ContextConsumer>
+        )
+    }
+}
+
+export default Flowers

@@ -25,9 +25,9 @@ class Form extends Component {
                 ...context.uglyFlowersLists,
                 {
                     uglyFlowersTitle: this.state.uglyFlowersTitle,
-                    uglyFlowersDescripton: this.state.uglyFlowersTitle,
+                    uglyFlowersDescripton: this.state.uglyFlowersDescripton,
                     uglyFlowersImage: this.state.uglyFlowersImage,
-
+                    comments: this.state.comments,
                 },
             ],
             uglyFlowersTitle: '',
@@ -65,7 +65,7 @@ class Form extends Component {
                 <form>
                     <div className ="form-wrapper">
                         <br></br>
-                        <div className= "th" style={{gridColumn:"span3"}}>The Ulgliest Flowers Ever</div>
+                        <div className= "th" style={{gridColumn:"span3"}}>The Ugliest Flowers Ever</div>
 
                         <div className= "td">
                             <input
@@ -73,7 +73,7 @@ class Form extends Component {
                                 type= "text"
                                 name= "uglyFlowersTitle"
                                 value= {this.state.uglyFlowersTitle}
-                                placeholder= "Annuals & Perrinials"
+                                placeholder= "Flower Title"
                                 onChange= {this.handleChange}
                             />
                         </div>
@@ -81,8 +81,8 @@ class Form extends Component {
                             <input
                                 className= "inputs"
                                 type= "text"
-                                name= "uglyFlowersDescription"
-                                value= {this.state.uglyFlowersDescripton}
+                                name= "uglyFlowersdescription"
+                                value= {this.state.uglyFlowersdescripton}
                                 placeholder= "Ugly Flowers Description"
                                 onChange= {this.handleChange}
                             />
@@ -91,7 +91,7 @@ class Form extends Component {
                             <input
                                 className= "inputs"
                                 type= "text"
-                                name= "uglyFlowersimage"
+                                name= "uglyFlowersImage"
                                 value= {this.state.uglyFlowersImage}
                                 placeholder= "Ugly Flowers Image"
                                 onChange= {this.handleChange}
@@ -103,7 +103,7 @@ class Form extends Component {
                             <input
                             className = "submit"
                             type= "submit"
-                            onclick = {(e) => {
+                            onClick = {(e) => {
                                 this.uglyFlowersUpdate(e, context)
                             }}
                             value= "Submit"

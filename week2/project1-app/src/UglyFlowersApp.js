@@ -1,6 +1,6 @@
 import React from 'react'
 import Form from './UglyFlowersForms.js'
-// import Flower from './UglyFlowers.js'
+import Flowers from './UglyFlowers.js'
 import { ContextProvider } from './UglyFlowersContext.js'
 import './UglyFlowersApp.css';
 
@@ -9,7 +9,7 @@ function UglyFlowersApp() {
     <div>
       <ContextProvider>
           <Form />
-          {/* <Flowers /> */}
+          <Flowers />
       </ContextProvider>
     </div> 
   );
