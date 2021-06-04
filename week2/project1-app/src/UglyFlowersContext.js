@@ -19,7 +19,7 @@ class ContextProvider extends Component {
             {
                 uglyFlowersTitle: "Aristolochia Salvadorensis",
                 uglyFlowersDescription: "The Darth Vader or Swaddle Baby Orchid from Costa Rica.",
-                uglyFlowersImage: "https://raw.githubusercontent.com/JeromeBlackwell/fsw-130/main/week2/project1-app/src/Gastrodia.jpg",
+                uglyFlowersImage: "https://raw.githubusercontent.com/JeromeBlackwell/fsw-130/main/week2/project1-app/src/Aristolochia.jpg",
                 comments: ["The Darth Vader flower is pure ugly and creepy too."],
             },
         ],
