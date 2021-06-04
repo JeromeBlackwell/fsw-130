@@ -7,19 +7,19 @@ class ContextProvider extends Component {
             {
             uglyFlowersTitle: "Amorphophallus Paeonifolius",
             uglyFlowersDescription: "Amorphophallus Paeonifolius is a perrinial and grows to about 2ft 7inches.",
-            uglyFlowersImage: "./amorphophallus.jpg",
+            uglyFlowersImage: "https://raw.githubusercontent.com/JeromeBlackwell/fsw-130/main/week2/project1-app/src/Aristolochia.jpg",
             comments: ["This flower looks prehistoric and ugly too."],
             },
             {
                 uglyFlowersTitle: "Gastrodia Annicellus",
                 uglyFlowersDescription: "2021's newly found species and was given the name, the Ugliest Orchid in the World.",
-                uglyFlowersImage: "./gastrodia.jpg",
+                uglyFlowersImage: "https://github.com/JeromeBlackwell/fsw-130/blob/main/week2/project1-app/src/Gastrodia.jpg",
                 comments: ["This flower is insane."],
             }, 
             {
                 uglyFlowersTitle: "Aristolochia Salvadorensis",
                 uglyFlowersDescription: "The Darth Vader or Swaddle Baby Orchid from Costa Rica.",
-                uglyFlowersImage: "./aristolochia.jpg",
+                uglyFlowersImage: "https://raw.githubusercontent.com/JeromeBlackwell/fsw-130/main/week2/project1-app/src/Gastrodia.jpg",
                 comments: ["The Darth Vader flower is pure ugly and creepy too."],
             },
         ],
@@ -61,9 +61,9 @@ class ContextProvider extends Component {
             <Provider
                 value= {{
                     uglyFlowersLists: uglyFlowersLists,
-                    updateItems: this.updateItems,
-                    uglyFlowersDelete: this.UglyFlowersDelete,
-                    uglyFlowerCommentDelete: this.uglyFlowerCommentDelete,
+                    updateFlowersItems: this.updateItems,
+                    uglyDelete: this.UglyFlowersDelete,
+                    uglyCommentDelete: this.uglyFlowerCommentDelete,
                 }}
             >
             

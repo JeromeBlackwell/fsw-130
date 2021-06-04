@@ -99,7 +99,7 @@ class Form extends Component {
                         </div>
 
                         <div style = {{gridColumn: "span'2"}}></div>
-                        <div classname = "td">
+                        <div className = "td">
                             <input
                             className = "submit"
                             type= "submit"
