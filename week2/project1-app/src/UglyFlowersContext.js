@@ -7,7 +7,7 @@ class ContextProvider extends Component {
             {
             uglyFlowersTitle: "Amorphophallus Paeonifolius",
             uglyFlowersDescription: "Amorphophallus Paeonifolius is a perrinial and grows to about 2ft 7inches.",
-            uglyFlowersImage: "https://raw.githubusercontent.com/JeromeBlackwell/fsw-130/main/week2/project1-app/src/Aristolochia.jpg",
+            uglyFlowersImage: "https://raw.githubusercontent.com/JeromeBlackwell/fsw-130/main/week2/project1-app/src/amorphophallus.jpg",
             comments: ["This flower looks prehistoric and ugly too."],
             },
             {
@@ -61,7 +61,7 @@ class ContextProvider extends Component {
             <Provider
                 value= {{
                     uglyFlowersLists: uglyFlowersLists,
-                    updateFlowersItems: this.updateItems,
+                    updateItems: this.updateItems,
                     uglyDelete: this.UglyFlowersDelete,
                     uglyCommentDelete: this.uglyFlowerCommentDelete,
                 }}

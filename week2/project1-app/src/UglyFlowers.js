@@ -9,13 +9,13 @@ class Flowers extends Component {
         })
     }
     
-    uglyFlowersUpdate = (e, context) => {
+    uglyUpdate = (e, context) => {
         context.updateItems([
         ...context.uglyFlowersLists,
         {
-        uglyTitle: this.state.uglyFlowersTitle,
-        uglydescription: this.state.uglyFlowersDescription,
-        uglyImage: this.state.uglyFlowersImage,
+        uglyFlowersTitle: this.state.uglyFlowersTitle,
+        uglyFlowersdescription: this.state.uglyFlowersDescription,
+        uglyFlowersImage: this.state.uglyFlowersImage,
         comments: this.state.comments,
         },
     ])
@@ -37,14 +37,14 @@ newComments = (e, context, index) => {
                 <ContextConsumer>
                     {(context) => (
                         <div className="things-wrapper">
-                            {context.uglyFlowersLists.map((uglyInfo, index) => (
+                            {context.uglyFlowersLists.map((uglyFlowersInfo, index) => (
                                 <div id={index} key={index}>
                                     <div className='th'>
-                                        {uglyInfo.uglyFlowersTitle}
+                                        {uglyFlowersInfo.uglyFlowersTitle}
                                         <button style={{ float:"right", padding:"2px", borderRadius:"3px", backgroundColor:"green"}} onClick={context.uglyDelete} id={index}>Delete</button>
                                     </div>
-                                        <div className='td'><img src={uglyInfo.uglyFlowersImage} style={{ width:"90%", height:"90%", padding: "10px"}} alt='' /></div>
-                                        <div className='td'>{uglyInfo.uglyFlowersDescription}</div>
+                                        <div className='td'><img src={uglyFlowersInfo.uglyFlowersImage} style={{ width:"90%", height:"90%", padding: "10px"}} alt='' /></div>
+                                        <div className='td'>{uglyFlowersInfo.uglyFlowersDescription}</div>
                                         <br />
                                         <div className='td'>
                                             <input
@@ -58,7 +58,7 @@ newComments = (e, context, index) => {
                                         }}
                                         placeholder='Add Your Own Comment'
                                     />
-                                    {uglyInfo.comments.map((comment, i) => (
+                                    {uglyFlowersInfo.comments.map((comment, i) => (
                                         <div className='td'>
                                             {comment}{' '}
                                             <button

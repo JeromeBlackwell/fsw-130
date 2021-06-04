@@ -37,7 +37,7 @@ class Form extends Component {
         })
 
         context.updateFlowersItems([
-            ...context.uglyFlowersLists,
+            ...context.uglyLists,
             {
                 uglyFlowersTitle: this.state.uglyFlowersTitle,
                 uglyFlowersDescripton: this.state.uglyFlowersDescripton,
@@ -104,7 +104,7 @@ class Form extends Component {
                             className = "submit"
                             type= "submit"
                             onClick = {(e) => {
-                                this.uglyFlowersUpdate(e, context)
+                                this.uglyUpdate(e, context)
                             }}
                             value= "Submit"
                         />

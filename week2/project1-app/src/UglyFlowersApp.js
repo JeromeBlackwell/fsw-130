@@ -10,7 +10,7 @@ function UglyFlowersApp() {
       <ContextProvider>
           <Form />
           <Flowers />
-      </ContextProvider>
+      </ContextProvider>,
     </div> 
   );
 }

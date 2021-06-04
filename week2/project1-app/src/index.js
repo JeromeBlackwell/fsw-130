@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import UglyFlowersApp from './UglyFlowersApp';
 import reportWebVitals from './reportWebVitals';
-import {ContextProvider} from './UglyFlowersContext'
+import {ContextProvider} from './UglyFlowersContext';
 
 ReactDOM.render(
+  
   <ContextProvider>
     <UglyFlowersApp />
   </ContextProvider>,
-  document.getElementById('root')
+  
+document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
