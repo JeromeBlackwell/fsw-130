@@ -13,7 +13,7 @@ class ContextProvider extends Component {
             {
                 uglyFlowersTitle: "Gastrodia Annicellus",
                 uglyFlowersDescription: "2021's newly found species and was given the name, the Ugliest Orchid in the World.",
-                uglyFlowersImage: "https://github.com/JeromeBlackwell/fsw-130/blob/main/week2/project1-app/src/Gastrodia.jpg",
+                uglyFlowersImage: "https://raw.githubusercontent.com/JeromeBlackwell/fsw-130/main/week2/project1-app/src/Gastrodia.jpg",
                 comments: ["This flower is insane."],
             }, 
             {
