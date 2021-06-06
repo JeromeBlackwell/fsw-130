@@ -1,19 +1,19 @@
 import React from 'react'
-import Form from './EntertainmentForm.js'
+import Form from './GameShowForm.js'
 import Headings from './Headings.js'
 import Listings from './Listings.js'
-import {MovieContextProvider} from './EntertainmentContext.js'
+import GameShowContextProvider} from './GameShowContext.js'
 
-function EntertainmentApp() {
+function GameShowApp() {
   return (
     <div>
-      <MovieContextProvider>
+      <GameShowContextProvider>
         <Form />
         <Headings />
         <Listings />
-      </MovieContextProvider>
+      </GameShowContextProvider>
     </div>
   )
 }
 
-export default EntertainmentApp
+export default GameShowApp

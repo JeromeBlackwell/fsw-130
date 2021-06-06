@@ -61,7 +61,7 @@ class ContextProvider extends Component {
             <Provider
                 value= {{
                     uglyFlowersLists: uglyFlowersLists,
-                    updateItems: this.updateItems,
+                    updateFlowersItems: this.updateItems,
                     uglyDelete: this.UglyFlowersDelete,
                     uglyCommentDelete: this.uglyFlowerCommentDelete,
                 }}

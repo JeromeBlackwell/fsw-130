@@ -2,6 +2,12 @@ import React, { Component } from "react"
 import {ContextConsumer} from "./UglyFlowersContext.js"
 
 class Flowers extends Component {
+    constructor (){
+    super ()
+    this.state = {
+        comments: [],
+        comment: ''
+    }}
     handleChange = (e) => {
         const { name, value } = e.target
         this.setState({
@@ -30,7 +36,7 @@ newComments = (e, context, index) => {
         Object.assign(array[index], {
             comments: [...context.uglyFlowersLists[index].comments, e.target.value],
             })
-            context.updateItems(array)
+            context.updateFlowersItems(array)
         }
         render() {
             return (
@@ -50,6 +56,7 @@ newComments = (e, context, index) => {
                                             <input
                                                 name='comment'
                                                 type='text'
+                                                value = {this.state.comment}
                                                 onChange={this.handleChange}
                                                 onKeyPress={(e) => {
                                                 if (e.key === 'Enter') {
@@ -59,7 +66,7 @@ newComments = (e, context, index) => {
                                         placeholder='Add Your Own Comment'
                                     />
                                     {uglyFlowersInfo.comments.map((comment, i) => (
-                                        <div className='td'>
+                                        <div key = {i} className='td'>
                                             {comment}{' '}
                                             <button
                                                 style={{ padding:"3px", borderRadius:"3px", backgroundColor:"green"}}
