@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap");
 body {
-  background: skyblue;
+  background: rgb(230, 160, 111);
 }
 input[type="text"],
 select {
-  border: 1px solid #ccc;
+  border: 1px solid rgb(241, 187, 187);
   border-radius: 4px;
   box-sizing: border-box;
   display: inline-block;
@@ -15,7 +15,7 @@ input[type="submit"] {
   background-color: gray;
   border: none;
   border-radius: 4px;
-  color: white;
+  color: rgb(240, 246, 247);
   cursor: pointer;
   margin: 0;
   padding: 5px;
@@ -23,7 +23,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: blue;
+  background-color: rgb(255, 72, 0);
 }
 .games {
   margin: 0 auto;
@@ -35,7 +35,7 @@ input[type="submit"]:hover {
 .th {
   font-family: "Roboto", sans-serif;
   text-align: center;
-  background-color: lightblue;
+  background-color: rgb(28, 236, 122);
   font-weight: 600;
   padding: 3px;
 }
