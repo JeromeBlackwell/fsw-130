@@ -7,7 +7,7 @@ function Show() {
         <GameShowContextConsumer>
             {context => ( 
                 context.gameShow.map((gameShowInfo, index) => 
-                    <div className='gameShows' id={index} key={gameShowInfo}>
+                    <div className='gameShows' id={index} key={index}>
                         <div className='td'>{gameShowInfo.title}</div>
                         <div className='td'>{gameShowInfo.director}</div>
                         <div className='td'>{gameShowInfo.genre}</div>

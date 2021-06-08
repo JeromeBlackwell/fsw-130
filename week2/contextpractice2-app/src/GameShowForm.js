@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { GameShowContextConsumer } from './GameShowContext.js'
-import './GameShowtApp.css'
+import './GameShowApp.css'
 
 function Form() {
     return (
@@ -17,7 +17,7 @@ function Form() {
                   <input className='input' type='text' name='year' value={context.year} placeholder='Year' onChange={context.handleChange}/>
 
                   <div style={{gridColumn:"span 3"}}></div>
-                  <input type='submit' onClick={(context.GameShowUpdate)} value='Submit'/>
+                  <input type='submit' onClick={(context.gameShowUpdate)} value='Submit'/>
               </form>
               <br />
           </div>
