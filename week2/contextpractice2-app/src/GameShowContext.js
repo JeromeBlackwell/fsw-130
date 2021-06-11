@@ -5,63 +5,63 @@ class GameShowContextProvider extends Component {
   state = {
     gameShow: [
       {
-        title: 'Empire of the Sun',
-        director: 'Steven Spielberg',
-        genre: 'War/Drama',
-        year: '1987',
+        title: 'Wheel of Fortune',
+        host: 'Chuck Woolery',
+        creator: 'Merv Griffin',
+        year: '1975',
       },
       {
-        title: 'The Princess Bride',
-        director: 'Rob Reiner',
-        genre: 'Romance/Adventure',
-        year: '1987',
+        title: 'Jeopardy',
+        host: 'Alex Trebek',
+        creator: 'Merv Griffin',
+        year: '1964',
       },
       {
-        title: 'Stargate',
-        director: 'Roland Emmerich',
-        genre: 'Sci-fi/Adventure',
-        year: '1994',
+        title: 'Price is Right',
+        host: 'Drew Carey',
+        creator: 'Bob Stewart',
+        year: '1956',
       },
       {
-        title: "Ocean's Eleven",
-        director: 'Steven Soderbergh',
-        genre: 'Crime/Comedy',
-        year: '2001',
-      },
-      {
-        title: 'The Borne Identity',
-        director: 'Doug Liman',
-        genre: 'Action/Thriller',
-        year: '2002',
-      },
-      {
-        title: 'The Italian Job',
-        director: 'F. Gary Gray',
-        genre: 'Action/Thriller',
-        year: '2003',
-      },
-      {
-        title: 'Casino Royale',
-        director: 'Martin Campbell',
-        genre: 'Action/Adventure',
-        year: '2006',
-      },
-      {
-        title: 'Up',
-        director: 'Pete Docter',
-        genre: 'Family/Adventure',
-        year: '2009',
-      },
-      {
-        title: 'Rogue One',
-        director: 'Gareth Edwards',
-        genre: 'Sci-fi/Action',
+        title: "The $100,000 Pyramid",
+        host: 'Michael Straham',
+        creator: 'Bob Stewart',
         year: '2016',
+      },
+      {
+        title: 'Match Game',
+        host: 'Alex Baldwin',
+        creator: 'Frank Wayne',
+        year: '1962',
+      },
+      {
+        title: 'Who Wants to Be a Millionaire',
+        host: 'Jimmy Kimmel',
+        creator: 'David Briggs, Steven Knight, and Mike Whitehill',
+        year: '1999',
+      },
+      {
+        title: 'Lets Make a Deal',
+        host: 'Wayne Brady',
+        creator: 'Stefan Hatos and Monty Hall',
+        year: '1963',
+      },
+      {
+        title: 'To Tell the Truth',
+        host: 'Anthony Anderson',
+        creator: 'Bob Stewart',
+        year: '1956',
+      },
+      {
+        title: 'Card Sharks',
+        host: 'Joel McHale',
+        creator: 'Chester Feldman',
+        year: '1978',
       }
     ],
     title: '',
-    director: '',
-    genre: '',
+    host: '',
+    creator: '',
     year: ''
   }
 
@@ -77,13 +77,13 @@ class GameShowContextProvider extends Component {
     this.setState({
       gameShow: this.state.gameShow.concat({
         title: this.state.title,
-        director: this.state.director,
-        genre: this.state.genre,
+        host: this.state.host,
+        creator: this.state.creator,
         year: this.state.year,
       }),
       title: '',
-      director: '',
-      genre: '',
+      host: '',
+      creator: '',
       year: '',
     })
   }
@@ -93,8 +93,8 @@ class GameShowContextProvider extends Component {
         value={{
           GameShow: this.state.gameShow,
           title: this.state.title,
-          director: this.state.director,
-          genre: this.state.genre,
+          host: this.state.host,
+          creator: this.state.creator,
           year: this.state.year,
           handleChange: this.handleChange,
           gameShowUpdate: this.GameShowUpdate,

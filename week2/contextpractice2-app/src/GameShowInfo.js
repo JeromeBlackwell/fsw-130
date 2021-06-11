@@ -9,8 +9,8 @@ function Show() {
                 context.gameShow.map((gameShowInfo, index) => 
                     <div className='gameShows' id={index} key={index}>
                         <div className='td'>{gameShowInfo.title}</div>
-                        <div className='td'>{gameShowInfo.director}</div>
-                        <div className='td'>{gameShowInfo.genre}</div>
+                        <div className='td'>{gameShowInfo.host}</div>
+                        <div className='td'>{gameShowInfo.creator}</div>
                         <div className='td'>{gameShowInfo.year}</div>
                     </div>
                 )

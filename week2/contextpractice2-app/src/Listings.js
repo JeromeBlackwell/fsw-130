@@ -7,10 +7,10 @@ function Listings() {
         <GameShowContextConsumer>
             {context => ( 
                 context.GameShow.map((GameShowInfo, index) => 
-                    <div className='gameshow' id={index} key={index}>
+                    <div className='games' id={index} key={index}>
                         <div className='td'>{GameShowInfo.title}</div>
-                        <div className='td'>{GameShowInfo.director}</div>
-                        <div className='td'>{GameShowInfo.genre}</div>
+                        <div className='td'>{GameShowInfo.host}</div>
+                        <div className='td'>{GameShowInfo.creator}</div>
                         <div className='td'>{GameShowInfo.year}</div>
                     </div>
                 )
