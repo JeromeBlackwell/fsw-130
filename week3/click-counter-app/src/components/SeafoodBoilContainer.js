@@ -5,7 +5,7 @@ import {Buy_SeafoodBoil} from '../redux/Boil/Boiltype'
 function SeafoodBoilContainer (props) {
     return (
         <div>
-            <h3>Number of Seafood Boils - {props.numberofBoils}</h3>
+            <h3>Number of Seafood Boils {props.numberofBoils}</h3>
             <button onClick={props.BuyBoils}>Buy Seafood Boils</button>
             </div>
     )

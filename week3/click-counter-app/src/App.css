@@ -1,8 +1,18 @@
 body {
-    background-image: url("./components/Seafoodboil.jpg");
-    background-size: co
-    }
+  background-image: url("./components/SeafoodBoil2.jpg");
+  background-position-x: 0px;
+  background-position-y: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+h3 {
+  color: rgb(255, 1, 1);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgba(0, 0, 0, 0.637);
+  font-size: 40px ;
+
+}
 .crab {
   Margin-top: 75px;
   margin-left: 8px;
