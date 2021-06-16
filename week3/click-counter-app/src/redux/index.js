@@ -1,1 +1,1 @@
-export {BuyBoil} from './boil/BoilActions.js'
+export {buySeafoodBoil} from './Boil/BoilActions.js'

@@ -1,11 +1,11 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {BuyBoil} from '../redux.js'
+import {Buy_SeafoodBoil} from '../redux/Boil/Boiltype'
 
 function SeafoodBoilContainer (props) {
     return (
         <div>
-            <h2>Number of Seafood Boils - {props.numberofBoils}</h2>
+            <h3>Number of Seafood Boils - {props.numberofBoils}</h3>
             <button onClick={props.BuyBoils}>Buy Seafood Boils</button>
             </div>
     )
@@ -19,7 +19,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        BuyBoil: () => dispatch(BuyBoil())
+        Buy_SeafoodBoil: () => dispatch(Buy_SeafoodBoil())
     }
 }
 
