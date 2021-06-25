@@ -51,9 +51,9 @@ store.subscribe(() => {
 })
 
 store.dispatch(addContact({name:  'Gordon Ramsey', phone: '555-HELL-SKIT',email: 'ramsey.gordon@hells.com'}))
-// store.dispatch(addContact({name:  'Michael Jackson', phone: '555-HELL-SKIT',email: 'ramsey.gordon@hells.com'}))
-// store.dispatch(addContact({name:  'Gordon Ramsey', phone: '555-HELL-SKIT',email: 'ramsey.gordon@hells.com'}))
-// store.dispatch(addContact({name:  'Gordon Ramsey', phone: '555-HELL-SKIT',email: 'ramsey.gordon@hells.com'}))
+store.dispatch(addContact({name:  'Michael Jackson', phone: '866-467-7851',email: 'michael.jackson@yahoo.com'}))
+store.dispatch(addContact({name:  'Jerome Blackwell', phone: '443-810-7221',email: 'blackwell.jerome@gmail.com'}))
+store.dispatch(addContact({name:  'Bill Cosby', phone: 'GET-MEE-OUTT',email: 'jellopuddingpops@jail.org'}))
 
 store.dispatch(addContact({name:  'Gordon Ramsey', phone: '555-HELL-SKIT',email: 'ramsey.gordon@hells.com'}))
-// store.dispatch(addContact({name:  'Michael Jackson', phone: '555-HELL-SKIT',email: 'ramsey.gordon@hells.com'}))
+store.dispatch(addContact({name:  'Michael Jackson', phone: '866-467-7851',email: 'michael.jackson@yahoo.com'}))

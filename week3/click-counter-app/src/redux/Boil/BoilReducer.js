@@ -1,7 +1,5 @@
 import {Buy_SeafoodBoil} from './Boiltype'
 
-
-
 const initialState = {
     numberOfBoils: 10
 }

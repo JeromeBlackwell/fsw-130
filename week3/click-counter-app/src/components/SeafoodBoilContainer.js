@@ -5,7 +5,7 @@ import {Buy_SeafoodBoil} from '../redux/Boil/Boiltype'
 function SeafoodBoilContainer (props) {
     return (
         <div>
-            <h3>Number of Seafood Boils {props.numberofBoils}</h3>
+            <h3>Number of Seafood Boils - {props.numberOfBoils}</h3>
             <button onClick={props.BuyBoils}>Buy Seafood Boils</button>
             </div>
     )
@@ -13,11 +13,11 @@ function SeafoodBoilContainer (props) {
 
 const mapStateToProps = state => {
     return {
-        numberofBoils: state.numberofBoils
+        numberOfBoils: state.numberOfBoils
     }
 }
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps =  dispatch => {
     return {
         Buy_SeafoodBoil: () => dispatch(Buy_SeafoodBoil())
     }
