@@ -8,7 +8,7 @@ const initialState ={
     }
 }
 
-function Delta(state =initialState, action) {
+function Reducer(state =initialState, action) {
     switch(action.type) {
         case 'ADD_CONTACT':
             return {
@@ -28,4 +28,4 @@ function Delta(state =initialState, action) {
     }
 }
 
-export default Delta
+export default Reducer
