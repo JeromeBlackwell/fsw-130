@@ -1,0 +1,91 @@
+.mtvWrapper {
+    width: 250px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.mtvHeader {
+    color: black;
+    background-color: skyblue;
+    padding: 2px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: larger;
+    grid-column: span 2;
+    border-radius: 5px;
+}
+.mtvCell {
+    font-size: small;
+}
+.mtvSpan {
+    font-size: small;
+    grid-column: span 2;
+    padding: 0px;
+}
+.mtvButtonBig {
+    width: 100px;
+    border-radius: 5px;
+}
+.mtvButtonSmall {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    padding: 0px;
+}
+.mtvNav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 3vh;
+    background: red;
+    color: white;
+}
+.mtvLinks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    list-style: none;
+}
+.mtvContainer {
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./movieGallery.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mWrapper {
+    margin: 0 auto;
+    width: 100%;
+    height:80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./movieGallery.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tvWrapper {
+    margin: 0 auto;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./tvGallery.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
