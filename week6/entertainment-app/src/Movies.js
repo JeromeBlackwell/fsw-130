@@ -22,7 +22,7 @@ function Movies() {
             </div>
 
             <div className='mtvCell'>
-                <button className='mtvButtonBig' onClick={() => dispatch(addMovies(title))}>+ Movie</button>
+                <button className='mtvButtonBig' onClick={() => dispatch(addMovie(title))}>+ Movie</button>
             </div>
 
             <div className='mtvHeader'>Movies</div>

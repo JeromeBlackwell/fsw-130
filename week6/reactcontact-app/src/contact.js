@@ -5,19 +5,18 @@ import { addContact, delContact } from './Redux/action.js'
 function Contact (props) {
     return (
         <div>
-            <h3>Chef Jerome's Seafood Boils Togo</h3>
-            {/* <button onClick ='{()=>{}}'>Order Up!!!</button> */}
-            <button onClick =''>Order Up!!!</button>
+            <h3></h3>
+            {/* <button onClick ='{()=>{}}'>Contact</button> */}
+            <button onClick =''>Submit</button>
         </div>
-
     )
 }
 
 const mapStateToProps = state => {
-    return { numOfCrabBoils: state.crabBoil.numOfCrabBoils }
-
+    return { addContact: state.Contact.addContact }
 const mapDispatchToProps = dispatch => {
-    return { buyCrabBoil: () => dispatch(buyCrabBoil()) }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Contact)
+    return { delContact: () => dispatch(delContact()) }
+}}
+export default connect; {
+    mapStateToProps},
+    mapDispatchToProps(Contact)

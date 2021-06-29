@@ -1,12 +1,12 @@
 import React from 'react'
 import { Provider } from 'react-redux'
 import store from './Redux/store.js'
-import Contact from './contact.js'
+import Contact from './Contact.js'
 
 function  ReactContactApp () {
     return (
         <div>
-            <Provider store = {store}>
+            <Provider store ={store}>
                 <div>
                     <Contact />
                 </div>

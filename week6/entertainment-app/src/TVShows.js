@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { addShow, delShow } from './actions.js'
+import { addShow, delShow } from './actions'
 
 function TVShows() {
     const shows = useSelector (state => state.shows)
