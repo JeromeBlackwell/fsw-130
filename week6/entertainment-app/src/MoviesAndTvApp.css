@@ -1,4 +1,7 @@
-.mtvWrapper {
+body {
+    background-color:slategray;
+}
+.entWrapper {
     width: 250px;
     margin: 0 auto;
     display: grid;
@@ -8,9 +11,9 @@
     justify-content: center;
     padding: 30px;
 }
-.mtvHeader {
+.entHeader {
     color: black;
-    background-color: skyblue;
+    background-color: rgb(235, 192, 135);
     padding: 2px;
     text-align: center;
     vertical-align: middle;
@@ -18,55 +21,57 @@
     grid-column: span 2;
     border-radius: 5px;
 }
-.mtvCell {
+.entCell {
     font-size: small;
 }
-.mtvSpan {
+.entSpan {
     font-size: small;
     grid-column: span 2;
     padding: 0px;
 }
-.mtvButtonBig {
+.entButtonBig {
     width: 100px;
     border-radius: 5px;
 }
-.mtvButtonSmall {
+.entButtonSmall {
     width: 16px;
     height: 16px;
     border-radius: 8px;
     padding: 0px;
 }
-.mtvNav {
+.entNav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 3vh;
-    background: red;
-    color: white;
+    background: rgb(47, 0, 255);
+    color: rgb(218, 207, 207);
 }
-.mtvLinks {
+.entLinks {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 90%;
     list-style: none;
 }
-.mtvContainer {
+.entContainer {
     margin: 0 auto;
+    margin-top: 25px;
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(./movieGallery.jpg);
+    background: url(./images/movieGallery.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.mWrapper {
+.entmWrapper {
     margin: 0 auto;
+    margin-top: 25px;
     width: 100%;
-    height:80vh;
+    height: 150vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,7 +81,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.tvWrapper {
+.entvWrapper {
     margin: 0 auto;
     width: 100%;
     height: 80vh;

@@ -10,7 +10,7 @@ function Movies() {
 
     return (
         <div className='mWrapper'>
-            <div className='mtvSpan'>
+            <div className='entSpan'>
                 <input
                     style={{width:'100%'}}
                     type='text'
@@ -21,15 +21,15 @@ function Movies() {
                 />
             </div>
 
-            <div className='mtvCell'>
+            <div className='entCell'>
                 <button className='mtvButtonBig' onClick={() => dispatch(addMovie(title))}>+ Movie</button>
             </div>
 
-            <div className='mtvHeader'>Movies</div>
+            <div className='entHeader'>Movies</div>
             {movies.map((movieTitles, index) => (
-                   <div className='mtvSpan' id={index} key={index}>
+                   <div className='entSpan' id={index} key={index}>
                         {index+1}. {movieTitles}
-                        <button className='mtvButtonSmall' onClick={() => dispatch(delMovie(index))}>-</button>
+                        <button className='entButtonSmall' onClick={() => dispatch(delMovie(index))}>-</button>
                     </div>
             ))}
 

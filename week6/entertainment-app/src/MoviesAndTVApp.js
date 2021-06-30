@@ -15,7 +15,7 @@ function MoviesAndTVApp() {
         <Router>
             <Provider store = { myStore }>
                 <Nav />
-                <div className='mtvContainer'>
+                <div className='entContainer'>
                     <Switch>
                         <Route exact path='./Movies'><Movies /></Route>
                         <Route exact path='/TvShows'><TVShows /></Route>

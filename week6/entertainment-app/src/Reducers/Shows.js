@@ -2,21 +2,17 @@ const ShowReducer = (shows =[], action) => {
     switch(action.type) {
         case 'GET_SHOWS':
             return shows
-            break
         case 'ADD_SHOW':
             return [...shows, action.payload]
-            break
         case 'DEL_SHOW': {
-            const aryShows = [...shows]
+            const anyShows = [...shows]
             if (action.payload !== -1) {
-                aryShows.splice(action.payload, 1)
+                anyShows.splice(action.payload, 1)
             }
-            return aryShows
-            break
+            return anyShows
         }
         default:
             return shows
-            break
     }
 }
 

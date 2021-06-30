@@ -9,8 +9,8 @@ function TVShows() {
     const [title, setTitle] = useState('')
 
     return (
-        <div className='TvWrapper'>
-            <div className='mtvSpan'>
+        <div className='entvWrapper'>
+            <div className='entSpan'>
                 <input
                     style={{width:'100%'}}
                     type='text'
@@ -21,15 +21,15 @@ function TVShows() {
                 />
             </div>
 
-            <div className='mtvCell'>
-                <button className='mtvButtonBig' onClick={() => dispatch(addShow(title))}>+ Show</button>
+            <div className='entCell'>
+                <button className='entButtonBig' onClick={() => dispatch(addShow(title))}>+ Show</button>
                 </div>
 
-            <div className='mtvHeader'>TVShows:</div>
+            <div className='entHeader'>TVShows:</div>
             {shows.map((showTitles, index) => (
-                <div className='mtvSpan'id={index} key={index}>
+                <div className='entSpan'id={index} key={index}>
                     {index+1}. {showTitles}
-                    <button className='mtvButtonSmall' onClick={() => dispatch(delShow(index))}>-</button>
+                    <button className='entButtonSmall' onClick={() => dispatch(delShow(index))}>-</button>
                 </div>
             ))}
         
