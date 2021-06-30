@@ -6,17 +6,31 @@ function Contact (props) {
     return (
         <div>
             <h3></h3>
-            {/* <button onClick ='{()=>{}}'>Contact</button> */}
-            <button onClick =''>Submit</button>
+            <button onClick ={()=>{}}>Submit</button>
+            {/* <button onClick =''>Submit</button>
+        //  */}
+        {props.contactList.map(contact =>{console.log (contact)
+            return (
+                <div>
+                 name:   {contact.name}
+                 <br></br>
+                 phone:   {contact.phone}
+                 <br></br>
+                 email:    {contact.email}
+
+                </div>
+
+            )
+        })}
+        
         </div>
     )
 }
 
 const mapStateToProps = state => {
-    return { addContact: state.Contact.addContact }
-const mapDispatchToProps = dispatch => {
-    return { delContact: () => dispatch(delContact()) }
-}}
-export default connect; {
-    mapStateToProps},
-    mapDispatchToProps(Contact)
+    return ({ contactList: state.contactList })
+}   
+// const mapDispatchToProps = dispatch => {
+//         return { delContact: () => dispatch(delContact()) 
+// }
+export default connect(mapStateToProps)(Contact)

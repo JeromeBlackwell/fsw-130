@@ -1,8 +1,8 @@
 import { Buy_SeafoodBoil} from './Boiltype.js'
 
-const buySeafoodBoil = () => {
+const BoilActions = () => {
     return {
-        type: Buy_SeafoodBoil,
+        type: BoilActions,
         payload: number
     }
 }

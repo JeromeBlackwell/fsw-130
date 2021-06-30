@@ -15,7 +15,11 @@ function delContact(Contact){
 }
 
 const initialState ={
-    contactList:  [],
+    contactList:  [{
+        name:  'Test',
+        phone:  '12',
+        email:  'Jerome.b@apap.com'
+    }],
     contact:
     {
         name:  '',

@@ -1,4 +1,4 @@
-import {Buy_SeafoodBoil} from './Boiltype'
+const buy_SeafoodBoil from './Boil/BoilActions.js'
 
 const initialState = {
     numberOfBoils: 10
@@ -6,7 +6,8 @@ const initialState = {
 
 const BoilReducer = (state = initialState, action) => {
     switch(action.type) {
-        case Buy_SeafoodBoil: return {
+        case const buy_SeafoodBoil from './Boil/BoilActions.js'
+        : return {
             ...state,
             numberOfBoils: state.numberOfBoils -1
         }

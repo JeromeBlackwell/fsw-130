@@ -6,7 +6,7 @@ function SeafoodBoilContainer (props) {
     return (
         <div>
             <h3>Number of Seafood Boils - {props.numberOfBoils}</h3>
-            <button onClick={props.BuyBoils}>Buy Seafood Boils</button>
+            <button onClick={props.BoilActions}>Buy Seafood Boils</button>
             </div>
     )
 }
